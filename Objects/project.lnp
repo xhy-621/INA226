@@ -1,0 +1,17 @@
+--cpu Cortex-M3
+".\objects\core_cm3.o"
+".\objects\system_stm32f10x.o"
+".\objects\startup_stm32f10x_hd.o"
+".\objects\misc.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_iwdg.o"
+".\objects\delay.o"
+".\objects\ina219.o"
+".\objects\ina226.o"
+".\objects\mian.o"
+--strict --scatter ".\Objects\project.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\project.map" -o .\Objects\project.axf
